@@ -1,0 +1,142 @@
+/* General setup */
+@font-face {
+  font-family: 'neumannregular'; /* Serif */
+  src: url('fonts/td-neumann-webfont.woff2') format('woff2'),
+       url('fonts/td-neumann-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'nerislight'; /* Sans-Serif */
+  src: url('neris-light-webfont.woff2') format('woff2'),
+       url('neris-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+  font-family: 'neumannregular', serif;
+  font-size: 14px; /* I increased the size beyond what the tutorial said because my font is small */
+}
+
+h1, h2 {
+  font-family: 'nerislight', sans-serif;
+  letter-spacing: .1rem;
+}
+
+body {
+  line-height: 1.6;
+  letter-spacing: .05rem;
+  font-size: 1.167em;
+  word-spacing: .05rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+a:link {
+  color: #a66;
+}
+
+a:visited {
+  color: rgb(15, 59, 9);
+}
+
+a:focus, a:hover {
+  color: rgb(235, 146, 146);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: rgb(63, 248, 38);
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+ul, ol, dl {
+  font-size: 1.5rem;  
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+li {
+  font-size: 1.167rem
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+nav {
+  background-color: rgb(202, 247, 198);
+  box-shadow: 1px 1px 5px black;
+  position: fixed;
+  left: 66.5%;
+}
